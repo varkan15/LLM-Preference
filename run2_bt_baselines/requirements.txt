@@ -1,0 +1,15 @@
+# Python 3.12 (also 3.10)
+# Install: python -m venv .venv && .venv\Scripts\python.exe -m pip install -r requirements.txt
+
+# --- Classical Bradley-Terry baseline (CPU only) ---
+datasets==5.1.0
+transformers==5.19.0   # tokenizer only; PyTorch not needed for this baseline
+scikit-learn==1.7.2
+numpy==2.2.6
+joblib==1.6.0
+
+# --- LoRA DPO / PPO baselines (GPU) - uncomment when setting up those runs ---
+# torch
+# trl
+# peft
+# accelerate
